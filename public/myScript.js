@@ -1,4 +1,4 @@
-var socket = io("https://git.heroku.com/fly-chat.git");
+var socket = io("https://fly-chat.herokuapp.com/");
 
 $(document).ready(function(){
 	$("#chat-form").hide();
