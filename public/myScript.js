@@ -6,10 +6,20 @@ $(document).ready(function(){
 	$("#btnRegister").click(function(){
 		var name = $("#textRegister").val();
 		socket.emit("client-register-name", name);
+		$("#textRegister").val("");
+	});
+
+	$("#btnSend").click(function(){
+		var nd = $("#txtSend").val();
+		socket.emit("client-send-mess", nd);
+		$("#txtSend").val("");
+	});
+	$("#btnLogout").click(function(){
+		socket.emit("client-logout");
+		$("#chat-form").hide(1000);
+		$("#login-form").show(1000);
 	});
 });
-
-
 
 socket.on("server-cancel-register", function(){
 	alert("Tên này đã có người dùng, bạn hãy thử tên khác nhé!!!");
@@ -31,10 +41,6 @@ socket.on("server-send-listUser", function(list) {
 });
 
 socket.on("server-send-mess", function(data) {
-    $("#ct").append("<p>" + data + "</p>");
+    $("#listMess").append("<p>" + data.user + " : " + data.mess + "</p>");
 });
 
-$("#send").click(function() {
-    var ct = $("#ta").val();
-    socket.emit("client-send-mess", ct);
-});
