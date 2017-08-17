@@ -1,4 +1,4 @@
-var socket = io("http://localhost:3000/");
+var socket = io("https://git.heroku.com/fly-chat.git");
 
 $(document).ready(function(){
 	$("#chat-form").hide();
