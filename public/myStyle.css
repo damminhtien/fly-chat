@@ -1,0 +1,68 @@
+body{
+	color: white;
+	background: #41295a;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#chat-form{
+	text-align: center;
+}
+
+#left, #right {
+	min-width: 300px;
+}
+
+#left{
+	width: 30%;
+	float: left;
+	border: solid 1px yellow;
+	border-radius: 25px;
+	min-height: 420px;
+}
+
+#boxContent, #boxTitle {
+	padding: 5px;
+	margin: auto;
+}
+
+#boxTitle{
+	font-weight: bold;
+}
+
+#right{
+	width: 69.5%;
+	float: right;
+	border: solid 1px yellow;
+	border-radius: 25px;
+}
+
+#sayHi{
+	padding-top: 10px;
+	padding-right: -30px;
+	padding-bottom: 10px;
+	margin: auto;
+	text-align: right;
+	width: 100%;
+	
+}
+
+#listMess{
+	width: 96%;
+	min-height: 300px;
+	text-align: left;
+	padding: 20px;
+	border-bottom: solid blueviolet;
+	border-top: solid blueviolet;
+	border-width: 1px;
+}
+
+#sendMess{
+	width: 100%;
+	padding: 10px;	
+}
+
+#login-form{
+	padding: 30px;
+	text-align: center;
+}
