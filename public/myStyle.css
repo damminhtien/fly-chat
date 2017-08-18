@@ -66,3 +66,10 @@ body{
 	padding: 30px;
 	text-align: center;
 }
+
+p.message{
+	background: #630968;
+	border-radius: 2px;
+	padding: 3px;
+	color: white;
+}
