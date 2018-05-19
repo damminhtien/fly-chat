@@ -1,24 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Monoton|Pacifico|Philosopher');
+
 body{
-	color: white;
 	background: #41295a;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to left, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to left, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-#chat-form{
-	text-align: center;
+*{
+	color:  #fff;
 }
 
-#left, #right {
-	min-width: 300px;
+
+h1{
+	font-family: 'Pacifico', cursive;
+}
+
+h2{
+	font-family: 'Courgette', cursive;
+}
+
+p, input{
+	font-family: 'Philosopher', sans-serif;
+}
+
+#title{
+	font-family: 'Monoton', cursive;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	font-size: 40px;
+}
+
+#chat-form{
+	text-align: center;
+	width: 100vh;
 }
 
 #left{
 	width: 30%;
 	float: left;
-	border: solid 1px yellow;
-	border-radius: 25px;
+	border: solid 5px yellow;
 	min-height: 420px;
+	height: 100vh;
 }
 
 #boxContent, #boxTitle {
@@ -33,8 +56,8 @@ body{
 #right{
 	width: 69.5%;
 	float: right;
-	border: solid 1px yellow;
-	border-radius: 25px;
+	border: dashed 3px yellow;
+	height: 100vh;
 }
 
 #sayHi{
@@ -48,28 +71,43 @@ body{
 }
 
 #listMess{
-	width: 96%;
-	min-height: 300px;
+	width: 100%;
 	text-align: left;
+	height: 90vh;
 	padding: 20px;
-	border-bottom: solid blueviolet;
-	border-top: solid blueviolet;
+	border-top: dashed 2px blueviolet;
 	border-width: 1px;
 }
 
 #sendMess{
-	width: 100%;
-	padding: 10px;	
+	width: 69.5%;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+#txtSend{
+	width: 90%;
+	color: black;
 }
 
 #login-form{
 	padding: 30px;
 	text-align: center;
+	color: #fff;
 }
 
 p.message{
 	background: #630968;
-	border-radius: 2px;
+	border-radius: 5px;
 	padding: 3px;
 	color: white;
+}
+
+#textRegister{
+	width: 300px;
+	border: 3px solid #fff;
+	background: transparent;
+	color:  #fff;
+	font-weight: 900;
 }
