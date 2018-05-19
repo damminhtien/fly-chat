@@ -1,5 +1,4 @@
 var socket = io("https://fly-chat.herokuapp.com/");
-//var socket = io("http://localhost:3000/");
 
 $(document).ready(function(){
 	$("#chat-form").hide();
