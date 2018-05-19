@@ -6,22 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Fly-Chat</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.min.js"></script>
     <link rel="stylesheet" href="myStyle.css">
-    <script src="https://fly-chat.herokuapp.com/socket.io/socket.io.js"></script>
-    <script src="jquery.js"></script>
-    <script src="myScript.js"></script>
 </head>
 
 <body>
 	<div id="login-form">
 		<h1>Welcome to FlyChat</h1>
 		<h2>What your name?</h2>
+		<br>
+		<br>
 		<input type="text" id="textRegister">
-		<input type="button" id="btnRegister" value="Start chat">
+		<input type="button" class="btn btn-outline-warning" id="btnRegister" value="Start chat">
+		<br><br><br><br>
+		<p id="title">SOCKET IO</p>
 	</div>
 	<div id="chat-form" style="display: inline;">
-		<h1>Fly Chat</h1>
 		<div id="left">
+			<h1>Fly Chat</h1>
 			<div id="boxTitle">
 				Friend Online
 			</div>
@@ -35,17 +38,22 @@
 			<div id="sayHi">
 				<span id="userAct"></span>.
 				Hi <span id="userName">name</span> ,
-				<input type="button" id="btnLogout" value="Log Out"/>
+				<input type="button" class="btn btn-warning" id="btnLogout" value="Log Out"/>
 			</div>
 
 			<div id="listMess">
 			</div>
 			<div id="sendMess">
 				<input type="text" id="txtSend"/>
-				<input type="button" id="btnSend" value="Send"/>
+				<input type="button" class="btn btn-outline-warning" id="btnSend" value="Send"/>
 			</div>
 		</div>
 	</div>
+	<!--<script src="https://fly-chat.herokuapp.com/socket.io/socket.io.js"></script>-->
+	<script src="socket.io/socket.io.js"></script>
+    <script src="jquery.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="myScript.js"></script>
 </body>
 
 </html>

@@ -10,7 +10,6 @@ server.listen(process.env.PORT || 3000);
 var listUser = [""];
 
 io.on("connection",function(socket){
-	
 	console.log("connected!!!" + socket.id);
 	socket.on("client-register-name", function(name){
 		console.log(name + " dang ky");
