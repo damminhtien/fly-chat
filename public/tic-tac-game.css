@@ -1,0 +1,120 @@
+table {
+    margin: auto;
+    border: 1px solid black;
+    width: 450px;
+    height: 450px;
+}
+
+td {
+    font-size: 100px;
+    margin: auto;
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+}
+
+td:hover {
+    background-color: #ffffff;
+}
+
+span {
+    float: left;
+    width: 50%;
+}
+
+#selectmode {
+    margin: auto;
+    padding: 70px;
+}
+
+#selectX,
+#selectO {
+    font-size: 150px;
+}
+
+#selectX {
+    background: #005C97;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #363795, #005C97);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #363795, #005C97);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#selectO {
+    background: #e53935;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e35d5b, #e53935);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e35d5b, #e53935);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#XorO {
+    color: #4c0080;
+    font-size: 35px;
+}
+
+p:hover {
+    background-color: pink;
+    color: white;
+}
+
+h1:hover {
+    background-color: #00cccc;
+    color: white;
+}
+
+h2:hover {
+    background-color: #a6ff4d;
+    color: white;
+}
+
+h3:hover {
+    background-color: #ff3333;
+    color: white;
+}
+
+h4:hover {
+    background-color: #fffff0;
+    color: orange;
+}
+
+#pointx,
+#pointo {
+    font-size: 25px;
+}
+
+#pointx:hover,
+#pointo:hover {
+    background-color: #a6ff4d;
+}
+
+body {
+    background: #bdc3c7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#nextround {
+    color: #4c0080;
+    font-size: 50px;
+}
+
+#Owin {
+    color: #e53935;
+    font-size: 50px;
+}
+
+#Xwin {
+    color: #005C97;
+    font-size: 50px;
+}
+
+#draw {
+    color: orange;
+    font-size: 50px;
+}

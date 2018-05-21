@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tic_Tac_Toe_Game </title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.min.js"></script>
+    <link rel="stylesheet" href="tic-tac-game.css">
+</head>
+
+<body>
+
+    <body>
+        <div class="text-center" id="waitView">
+            <h1>TIC TAC TOE</h1>
+            <h2>Enjoy the game!</h2>
+            <h3>Waiting for other player!!!</h3>
+        </div>
+        <p id="draw" class="text-center" onclick="draw()">Draw, try again :) </p>
+        <p id="nextround" class="text-center" onclick="nextround()">Next Round? OK?</p>
+        <div id="Xwin" class="text-center">Player X win!!! Congratulation!!!</div>
+        <div id="Owin" class="text-center">Player O win!!! Congratulation!!!</div>
+        <div id="maingame" class="text-center">
+            <p class="text-center" id="founded">Đã tìm thấy người chơi</p>
+            <p id="XorO" class="text-center"></p>
+            <div class="score">
+                <p>
+                    <span id="pointo" class="text-primary">Player O : 0</span>
+                    <span id="pointx" class="text-danger">Player X : 0</span>
+                </p>
+            </div>
+            <table>
+                <tr>
+                    <td id="11" onclick="play(this)"></td>
+                    <td id="12" onclick="play(this)"></td>
+                    <td id="13" onclick="play(this)"></td>
+                </tr>
+                <tr>
+                    <td id="21" onclick="play(this)"></td>
+                    <td id="22" onclick="play(this)"></td>
+                    <td id="23" onclick="play(this)"></td>
+                </tr>
+                <tr>
+                    <td id="31" onclick="play(this)"></td>
+                    <td id="32" onclick="play(this)"></td>
+                    <td id="33" onclick="play(this)"></td>
+                </tr>
+            </table>
+            <h4 onclick="replay()">Replay</h4>
+        </div>
+    </body>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="jquery.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="tic-tac-game.js"></script>
+</body>
+
+</html>
