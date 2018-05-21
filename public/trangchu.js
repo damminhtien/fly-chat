@@ -45,5 +45,9 @@ socket.on("server-send-listUser", function(list) {
 });
 
 socket.on("server-send-mess", function(data) {
+	if(data.mess.indexOf("https://www.youtube.com/") >= 0){
+		var videoCode = "https://www.youtube.com/embed/" + data.mess.substr((data.mess.indexOf("https://www.youtube.com/")+32), 11)+"?controls=1&showinfo=1&rel=0&autoplay=1&loop=1";
+		$("#myIframe").attr('src', videoCode);
+	}
     $("#listMess").append("<p class=\"message\">" + data.user + " : " + data.mess + "</p>").fadeIn(1000);
 });
